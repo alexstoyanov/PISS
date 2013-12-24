@@ -10,9 +10,8 @@ class UsersController < ApplicationController
           :id             => user.id,
           :first_name     => user.first_name,
           :last_name      => user.last_name,
-          :zip_code       => user.zip_code,
-          :employer_type  => user.employer_type,
-          :role           => user.role,
+          :faculty_number => user.faculty_number,
+          :user_type      => user.user_type
         }
       }
     else
@@ -31,9 +30,8 @@ class UsersController < ApplicationController
           :id             => current_user.id,
           :first_name     => current_user.first_name,
           :last_name      => current_user.last_name,
-          :zip_code       => current_user.zip_code,
-          :employer_type  => current_user.employer_type,
-          :role           => current_user.role,
+          :faculty_number => current_user.faculty_number,
+          :user_type      => current_user.user_type
         }
       }
     else

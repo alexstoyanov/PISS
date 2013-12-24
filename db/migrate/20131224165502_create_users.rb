@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :first_name, :null => false
       t.string :last_name, :null => false
       t.string :faculty_number
-      t.string :type, :null => false
+      t.string :user_type, :null => false
       t.string :password_digest
 
       t.datetime :password_reset_at
