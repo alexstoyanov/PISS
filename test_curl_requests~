@@ -1,9 +1,0 @@
-#Create user
-curl -X POST -H "Content-Type: application/son" -d '{"user":{"email":"zhivko.draganov@gmail.com", "first_name":"Zhivko", "last_name":"Draganov", "password":"111111", "password_confirmation":"111111", "user_type":"Master"}}' http://localhost:3000/users/create
-
-#Login user
-curl -v -X POST -H "Content-Type: application/json" -d '{"email":"zhivko.draganov@gmail.com", "password":"111111"}' http://localhost:3000/sessions/create
-
-#Get current user passing a cookie
-curl -i --cookie "auth_token=3irkixdKbdfnQVHkHdTo6Dqw5iXGOI_0UaskYs6FJ0" -H "Accept: application/json" http://localhost:3000/sessions/current
-
