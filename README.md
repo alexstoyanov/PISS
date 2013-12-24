@@ -1,4 +1,0 @@
-PISS
-====
-
-PISS project repository
