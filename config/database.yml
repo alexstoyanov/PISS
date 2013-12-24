@@ -1,0 +1,15 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: piss
+  pool: 5
+  username: root
+  password: zhivko
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: piss
+  pool: 5
+  username: root
+  password:
